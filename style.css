@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f2fe, #f8fbff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0f172a;
+}
+
+.container {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  width: 340px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #0369a1;
+}
+
+form {
+  margin-bottom: 1.25rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+}
+
+button {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  background: #0284c7;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.15s ease;
+}
+
+button:hover {
+  background: #0369a1;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(2, 132, 199, 0.25);
+}
+
+.tip-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tip-buttons button {
+  flex: 1;
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.tip-buttons button:hover {
+  background: #bae6fd;
+}
+
+#tip-amount {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0c4a6e;
+}
+.banner {
+  width: 100%;
+  background: linear-gradient(90deg, #0284c7, #38bdf8);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+body {
+  padding-top: 70px;
+}
+.banner a {
+  color: white;           /* keeps the text white */
+  text-decoration: none;  /* removes underline */
+  font-weight: 700;
+}
+
+.banner a:hover {
+  text-decoration: underline; /* subtle hover effect */
+}
